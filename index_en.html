@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Summary</title>
+  <meta name="description" content="The best front-end developer ever!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+<body>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+<div id="page-wrapper">
+
+<header>
+	<p class="img-logo"><img src="logo.jpg" class="logo"></p>
+</header>
+<div class="content">
+<h1>Summary</h1>
+<span class="img"><img src="Photo.jpg" class="Photo"></span>
+<p>For the position: <b>front end developer</b></p>
+<h2 id="personalData"><a href="#personalData" class="go_to" onclick="func(1);">Personal data</a></h2>
+<div class="personalData">
+<p>Full name: Bondarenko Artem Yuryevich</p>
+<p>Education: Dnipropetrovsk National University named after Oles Honchar, Faculty of Applied Mathematics (3rd year)</p>
+<p>Types of employment: full-time, part-time, remote work</p>
+<p>Date of birth: September 27, 1997</p>
+<p>Address: Donetsk Highway 124</p><br>
+</div>
+<h2 id ="skills"><a href="#skills" class="go_to" onclick="func(2);">Skills</a></h2>
+<div class="skills">
+<ul class="rectangle"><li>Skills HTML, CSS, JS, Vue js;</li>
+<li>Understanding the principles of OOP;</li>
+<li>Experience jQuery;</li>
+<li>Experience Git;</li>
+<li>Knowledge bootstrap;</li>
+<li>Skills of adaptive and cross-browser layout;</li>
+<li>Chrome Development tools;</li>
+<li>Knowledge of methodology BEM;</li>
+<li>English intermediate;</li>
+<li>Basic knowledge Photoshop;</li>
+<li>Basic knowledge PHP;</li>
+<li>Experience with CSS preprocessors: Less /Sass;</li>
+<li>CMS: WP, OpenCart;</li><br>
+</ul>
+</div>
+
+<h2 onclick="func(3);" id="contacts"><a href="#contacts" class="go_to" onclick="func(3);">Contacts</a></h2>
+<div class="contacts">
+<p>GitHub: <a href="https://github.com/ArtemBondarenko1997">https://github.com/ArtemBondarenko1997</a></p>
+<p>vk:<a href="https://vk.com/pobeditel_po.zhizni">https://vk.com/pobeditel_po.zhizni</a></p>
+<p>Telegram:<a href="https://t.me/bondarenko_a_u">@bondarenko_a_u</a></p>
+<p>Skype:<a href="https://join.skype.com/invite/dOnCWydnzvFD">live:4d1451e1c1fa159f</a></p>
+<p>Phone number:0996011553</p>
+</div>
+
+<h2  id="personalQualities"><a href="#personalQualities" class="go_to" onclick="func(4);">Personal qualities</a></h2>
+<div class="personalQualities">
+<ul class="rectangle"><li>Responsibility;</li>
+<li>I want to solve complex, non-standard tasks;</li>
+<li>Fast learner;</li>
+<li>Stress resistance.</li></ul>
+<p>Ready to start work in the near future.</p>
+</div>
+</div>
+<footer>
+	<div class="conteiner">
+		<div class="row">
+			<div class="col-4-lg">
+				<p>Phone number: 0996011553<p>
+			</div>
+			<div class="col-4-lg m-auto">
+				<a href="https://join.skype.com/invite/dOnCWydnzvFD"><img src="skype.svg" width="19" height="19"></a>
+				<a href="https://github.com/ArtemBondarenko1997"><img src="github.svg" width="19" height="19"></a>
+				<a href="https://t.me/bondarenko_a_u"><img src="telegram.svg" width="19" height="19"></a>
+			</div>
+			<div class="col-4-lg mt-auto mb-auto leng">
+				<a href="#"><img src="united-kingdom.svg" width="19" height="19" style="border: 2px solid white; border-radius: 100px; box-sizing: border-box;"></a>
+				<a href="index_ua.html"><img src="ukraine.svg" width="19" height="19"></a>
+				<a href="index.html" ><img src="russia.svg" width="19" height="19"></a>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+
+<!-- scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+jQuery.fn.animateAuto = function(prop, speed, callback){
+    var elem, height, width;
+    return this.each(function(i, el){
+        el = jQuery(el), elem = el.clone().css({"height":"auto","width":"auto"}).appendTo("body");
+        height = elem.css("height"),
+        width = elem.css("width"),
+        elem.remove();
+        
+        if(prop === "height")
+            el.animate({"height":height}, speed, callback);
+        else if(prop === "width")
+            el.animate({"width":width}, speed, callback);  
+        else if(prop === "both")
+            el.animate({"width":width,"height":height}, speed, callback);
+    });  
+}
+
+	function func(i){
+		var height_element;
+		var divName;
+		if(i==1) divName = 'personalData';
+		if(i==2) divName = 'skills';
+		if(i==3) divName = 'contacts';
+		if(i==4) divName = 'personalQualities';
+		if($('.'+divName).css('height')=='0px'){
+		$('.'+divName).animateAuto("height", 1000);
+		}
+		else{
+		$('.'+divName).animate({height: "0px"},1000);
+		}
+	}
+
+	$('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
+	var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 2000); // анимируем скроолинг к элементу scroll_el
+        }
+	    return false; // выключаем стандартное действие
+    });
+</script>
+</body>
+</html>

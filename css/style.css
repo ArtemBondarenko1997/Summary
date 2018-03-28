@@ -1,0 +1,222 @@
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  direction: none;
+  color: gray;
+}
+h1, h2{
+  text-align: center;
+  margin: 0px;
+}
+
+h2{
+  font-size: 25px;
+  position: relative;
+  width: 100%;
+  background-color: gray;
+  margin: 10px 0;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+h2 a{
+  color: white;
+}
+
+h2:hover{
+  background-color: black;
+}
+
+h2:hover a {  
+  color: white;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
+.row{
+  margin:0;
+}
+
+p{
+  margin: 10px;
+ }
+
+.Photo{
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 100px;
+  transition: all 1s;
+}
+
+
+.Photo:hover{
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 0px;
+}
+
+.logo{
+	width: 200px;
+}
+
+.img{
+  display: block;
+  text-align: center;
+}
+
+.img-logo{
+  display: block;
+  text-align: center;
+}
+
+.personalData, .skills, .contacts, .personalQualities{
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
+}
+
+#particles-js{
+  padding: 0;
+  margin: 0;
+  background-color: #D0D0D0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#page-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  padding: 0px 0px;
+  z-index: 2;
+  background-color: white;
+  width: 90%;
+  min-height: 100vh;
+  margin: 0 auto;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.rectangle {
+counter-reset: li; 
+list-style: none; 
+font: 14px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.rectangle li {
+position: relative;
+display: block;
+padding: .4em .4em .4em .8em;
+margin: .5em 0 .5em 2.5em;
+background: #D3D4DA;
+color: #444;
+text-decoration: none;
+transition: all .3s ease-out;
+}
+.rectangle li:hover {background: #DCDDE1;}       
+.rectangle li:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -2.5em;
+top: 50%;
+margin-top: -1em;
+background: #9097A2;
+height: 2em;
+width: 2em;
+line-height: 2em;
+text-align: center;
+font-weight: bold;
+}
+.rectangle li:after {
+position: absolute;
+content: "";
+border: .5em solid transparent;
+left: -1em;
+top: 50%;
+margin-top: -.5em;
+transition: all .3s ease-out;
+}
+.rectangle li:hover:after {
+left: -.5em;
+border-left-color: #9097A2;
+}
+
+.content {
+  padding-bottom: 39px;
+}
+
+footer{
+  font-size: 13px;
+  background: black;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 39px;
+}
+
+.leng{
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+a img:hover{
+  transition: all .5s;
+}
+
+a img:hover{
+  width: 25px !important;
+  height: 25px !important;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+}
+ 
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+.menu__item>a {
+  margin-right: 15px;
+}
+}
+ 
+@media only screen and (max-width: 992px) and  (min-width: 768px) {
+  #page-wrapper{
+    width: 80%;
+  }
+}
+ 
+@media only screen and (max-width: 1382px) and (min-width: 992px) {
+  #page-wrapper{
+    width: 80%;
+  }
+    #page-wrapper{
+    width: 70%;
+    }
+ 
+}
+
+@media only screen and (min-width: 1382px) {
+  #page-wrapper{
+  width: 50%;
+}
+}
